@@ -12,9 +12,8 @@ Engine integrado con google analytics que proporiciona un dashboard agradable, p
 Añadir la siguiente linea a su Gemfile
 
 ```ruby
-gem 'keppler_ga_dashboard', git: 'https://github.com/inyxtech/inyx_catalog_rails.git'
-gem 'acts-as-taggable-on', '~> 3.4'
-gem 'cocoon'
+gem 'keppler_ga_dashboard', git: 'https://github.com/inyxtech/keppler_ga_dashboard.git'
+gem 'google-api-client'
 ```
 
 Ubicarse en la ruta del proyecto desde la terminal y ejecutar
@@ -29,43 +28,34 @@ rake acts_as_taggable_on_engine:install:migrations
 rake db:migrate
 ```
 
-añadir la siguiente linea a su manifesto javascript `application.js`
+añadir la siguiente linea a su manifesto stylesheets `application.scss`
 
 ```ruby
-//= require blog/admin/application
-```
-
-añadir la siguiente linea a su manifesto stylesheets `application.css.scss`
-
-```ruby
-*= require blog/admin/application
+@import 'dashboard'
 ```
 
 añadir la siguiente ruta a su archivo routes.rb
 
 ```ruby
-mount InyxBlogRails::Engine, :at => '', as: 'post'
-```
-
-Por ultimo ir al directorio `app/assets/javascript/` y abrir el archivo main.js y agregar 'post' y 'categoryPost' a la suigiente linea de codigo codigo, ejemplo:
-
-```ruby
-angular.module('inyxmater', ['user']) #por defecto
-
-angular.module('inyxmater', ['user', 'post']) #debe quedar asi
+mount KepplerGaDashboard::Engine, :at => '', as: 'dashboard'
 ```
 
 ## Configuración
 
-Para agregar `config/initializers/blog.rb` y asi estabelecer los datos de configuración, debe ejecutar
+El engine necesita que el usuario cree una api para google analitycs desde google, esto lo puedes conseguir desde (https://console.developers.google.com), debes crear un cliente y selecionar la opción **cuenta de servicio**, debes generar una calve p12 y guardar el archivo que genera en el siguiente directorio `config/gaAuth`
 
-```ruby
-rake blog:copy_initializer
+Luego de haber realizado esto debe agregar los datos de configuración en `secrets.yml` bajo la siguiente configuracion:
+
+```yml
+ga_auth:
+  :service_account_email_address: "dirección de correo electronico generada por la api"
+  :file_key_name: "nombre del archio p12 generado por la api"
 ```
-## Vistas
 
-Para copiar las vistas en `app/views/inyx_blog_rails` y asi personalizarlas para adaptarlas a sus necesidades, debe ejecutar
+## Vista
+
+Para copiar las vistas en `app/views/keppller_ga_dashboard` y asi personalizarlas para adaptarlas a sus necesidades, debe ejecutar
 
 ```ruby
-rake blog:copy_views
+rake dashboard:copy_views
 ```
