@@ -3,6 +3,7 @@ require 'google/api_client'
 
 module KepplerGaDashboard
   class DashboardController < ApplicationController
+
     def analytics
     	# set up a client instance
 		  client  = ::Google::APIClient.new(:application_name => 'keppler', :application_version => '1')
