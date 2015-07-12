@@ -30,7 +30,7 @@ mount KepplerGaDashboard::Engine, :at => '', as: 'dashboard'
 
 ## Configuración
 
-El engine necesita que el usuario cree una api para google analitycs, esto lo puedes conseguir desde (https://console.developers.google.com), debes crear un  proyecto, luego crear un cliente y selecionar la opción **cuenta de servicio**, debes generar una calve p12 y guardar el archivo que genera en el directorio `config/gaAuth` de su app.
+El engine necesita que el usuario cree una api para google analitycs, esto lo puedes conseguir desde (https://console.developers.google.com), debes crear un  proyecto, luego crear un cliente y selecionar la opción **cuenta de servicio**, debes generar una calve p12 y guardar el archivo que generar en el directorio `config/gaAuth` de su app.
 
 Luego de haber realizado esto debe agregar los datos de configuración en `secrets.yml` bajo la siguiente configuracion:
 
@@ -44,7 +44,7 @@ ga_auth:
 
 ## Vista
 
-Para copiar las vistas en `app/views/keppller_ga_dashboard` y asi personalizarlas para adaptarlas a sus necesidades, debe ejecutar
+Para copiar las vista a tu proyecto y asi personalizarlas para adaptarlas y agregar nuevos reportes, debe ejecutar
 
 ```ruby
 rake dashboard:copy_views
