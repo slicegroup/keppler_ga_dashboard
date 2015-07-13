@@ -4,8 +4,7 @@ Engine integrado con google analytics que proporiciona un dashboard agradable, p
 
 ## Requerimientos
 
-* Ruby >= 2.x.x
-* Rails >= 4.x.x
+* Keppler-CMS >= 1.0.0
 
 ### Instalación
 
