@@ -11,7 +11,7 @@ Engine integrado con google analytics que proporiciona un dashboard agradable, p
 Añadir a su Gemfile
 
 ```ruby
-gem 'keppler-ga-dashboard', git: 'https://github.com/inyxtech/keppler-ga-dashboard.git'
+gem 'keppler_ga_dashboard', git: 'https://github.com/inyxtech/keppler_ga_dashboard.git'
 gem 'google-api-client'
 ```
 
