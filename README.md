@@ -1,4 +1,4 @@
-## Keppler google analytics dashboard 
+### Keppler google analytics dashboard 
 
 Engine integrado con google analytics que proporiciona un dashboard agradable, presentando algunas metricas sobre las visitas.
 
@@ -7,7 +7,7 @@ Engine integrado con google analytics que proporiciona un dashboard agradable, p
 * Ruby >= 2.x.x
 * Rails >= 4.x.x
 
-## Instalación
+### Instalación
 
 Añadir a su Gemfile
 
@@ -28,7 +28,7 @@ Añadir la siguiente ruta a su archivo `routes.rb`
 mount KepplerGaDashboard::Engine, :at => '', as: 'dashboard'
 ```
 
-## Configuración
+### Configuración
 
 El engine necesita que el usuario cree una api para google analitycs, esto lo puedes conseguir desde (https://console.developers.google.com), debes crear un  proyecto, luego crear un cliente y selecionar la opción **cuenta de servicio**, una vez creado hay que generar una calve p12 y guardar el archivo en el directorio `config/gaAuth` de su app.
 
@@ -42,7 +42,7 @@ ga_auth:
 
 **Nota:** *Asegurese de darle permisos a la api desde su cuenta de google analitycs*
 
-## Vista
+### Vista
 
 Para copiar las vista a tu proyecto y asi personalizarlas para adaptarlas y agregar nuevos reportes, debe ejecutar
 
