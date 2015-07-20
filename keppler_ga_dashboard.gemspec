@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = KepplerGaDashboard::VERSION
   s.authors     = ["Gabriel"]
   s.email       = ["gabriel@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of KepplerGaDashboard."
-  s.description = "TODO: Description of KepplerGaDashboard."
+  s.homepage    = "https://github.com/inyxtech/keppler_ga_dashboard"
+  s.summary     = "Summary of KepplerGaDashboard"
+  s.description = "Engine integrado con google analytics que proporciona un dashboard agradable presentando algunas métricas sobre las visitas."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
