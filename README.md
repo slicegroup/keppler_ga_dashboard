@@ -37,6 +37,7 @@ Luego de haber realizado esto debe agregar los datos de configuración en `secre
 ga_auth:
   :service_account_email_address: "dirección de correo electronico generada por la api"
   :file_key_name: "nombre del archio p12 generado por la api"
+  :account_id: "id de la cuenta de google analytics"
 ```
 
 **Nota:** *Asegurese de darle permisos a la api desde su cuenta de google analitycs*
