@@ -79,6 +79,7 @@
 		*/
 		var viewSelector = new gapi.analytics.ext.ViewSelector2({
 			container: 'view-selector-container',
+			accountId: "#{Rails.application.secrets.ga_auth.fetch(:account_id)}"
 		}).execute();
 	
 	
