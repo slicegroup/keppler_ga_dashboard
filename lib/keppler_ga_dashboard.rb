@@ -1,7 +1,7 @@
-require "keppler_ga_dashboard/engine"
+require 'keppler_ga_dashboard/engine'
 
+# KepplerGaDashboard
 module KepplerGaDashboard
-  ROUTE_SIDEBAR = true
   # Default way to setup ContactUs. Run rake contact_us:install to create
   # a fresh initializer with all configuration values.
   def self.setup
