@@ -4,6 +4,7 @@ module KepplerGaDashboard
   # DashboarController
   class DashboardController < ::ApplicationController
     layout 'admin/layouts/application'
+    before_action :dashboard_access, only: [:analytics]
     before_filter :authenticate_user!
 
     def analytics
@@ -19,8 +20,6 @@ module KepplerGaDashboard
 
       @access_token = client.authorization.fetch_access_token!['access_token']
     end
-
-    private
 
     # Options for authenticate
     def options
