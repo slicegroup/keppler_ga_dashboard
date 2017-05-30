@@ -1,4 +1,4 @@
-### Keppler google analytics dashboard
+### Keppler google analytics dashboard v1.0.0
 
 Engine integrado con google analytics que proporiciona un dashboard agradable, presentando algunas metricas sobre las visitas.
 
