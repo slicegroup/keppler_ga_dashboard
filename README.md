@@ -4,14 +4,14 @@ Engine integrado con google analytics que proporiciona un dashboard agradable, p
 
 ## Requerimientos
 
-* keppler-admin >= 1.1
+* keppler-admin >= 1.0
 
 ### Instalación
 
 Añadir a su Gemfile
 
 ```ruby
-gem 'keppler_ga_dashboard', git: 'https://github.com/SliceDevelopers/keppler_ga_dashboard.git', tag: "<version>"
+gem 'keppler_ga_dashboard', git: 'https://github.com/SliceDevelopers/keppler_ga_dashboard.git', tag: "1.0.0"
 gem 'google-api-client'
 ```
 
