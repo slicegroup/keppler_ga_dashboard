@@ -1,4 +1,4 @@
-### Keppler google analytics dashboard v1.0.0
+### Keppler Google Analytics Dashboard v1.0.0
 
 Engine integrado con google analytics que proporiciona un dashboard agradable, presentando algunas metricas sobre las visitas.
 
@@ -11,7 +11,7 @@ Engine integrado con google analytics que proporiciona un dashboard agradable, p
 Añadir a su Gemfile
 
 ```ruby
-gem 'keppler_ga_dashboard', git: 'https://github.com/SliceDevelopers/keppler_ga_dashboard.git', tag: "1.0.0"
+gem 'keppler_ga_dashboard', git: 'https://github.com/slicegroup/keppler_ga_dashboard.git', tag: "1.0.0"
 gem 'google-api-client'
 ```
 
